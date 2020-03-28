@@ -60,9 +60,7 @@ li {
 
 section {
     padding: 2.441em 0; /* 61.04px */
-    /* 25px */
 }
-        /* What's this for again? */
 
 main {
     background-color: white;
@@ -79,12 +77,11 @@ main {
 p {
     width: 100%;
     margin: auto;
-    padding: .512em 0; 
-        /* 20px */
+    padding: .512em 0; /* 20px */
 }
 
 h2, img {
-    padding: 1.25em 0; /* 61.04px */
+    padding: 1.25em 0; /* 31.25px */
     margin: 0;
     width: 100%;
 }
@@ -131,7 +128,7 @@ footer {
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: 1.25em; /* 31.25px */
     font-weight: bold;
     text-align: left;
     color: #eb422a;
@@ -162,20 +159,4 @@ a:hover {
         /* Waiting to learn how to integrate a transition into #eb422a */
 
 
-
-
-
-
-
 /* -------- */
-
-
-/* 
-li {
-    display: inline-block; This is for tablet & desktop.
-}
-*/
-
-/* 
-box-sizing: border-box;
-*/

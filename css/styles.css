@@ -1,0 +1,173 @@
+/* =============== */
+/* Type Selectors */
+/* ============= */
+
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    background-color: #fafafa;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.25em; /* 20px / 16px */
+    font-weight: lighter;
+    text-align: center;
+    line-height: 1.5;
+    margin: auto; 
+    padding: 0 .8em; /* 16px */
+}
+        /* I obtained the background color by using an online color picker that sampled the background color of the body in a reference image.*/
+        /* I chose Rubik as my font, as I found the sans-serif to be compatible to the mockup and versatile in weight. The rounded corners add a more complementary element to the theme, and I chose Ubuntu to add a playful contrast for the title. */
+
+
+/* ------- */
+
+header {
+    padding: 1em 0; /* 20px */
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.25em; /* 25px */
+    width: 100%;
+}
+
+header, h2 {
+    font-weight: bold;
+}
+
+nav, h2 {
+    text-transform: uppercase;
+    font-size: .8em; /* 16px */
+}
+
+ul {
+    padding: 0;
+}
+        /* Why is this happening? */
+
+li {
+    list-style: none;
+    background-color: white;
+    margin: 5px 0; /* Should I use relative values here? */
+    padding: .75rem 0; /* Rem unit due to compounding */
+    width: 100%; /* Necessary? */
+}
+        /* Locate anchor tags in Pseudo Styles Section */
+
+
+/* ------- */
+
+section {
+    /* padding: 1em 0; */
+}
+        /* What's this for again? */
+
+main {
+    background-color: white;
+    /* padding: 1em; */
+}
+
+.profile-img {
+    width: 70%;
+    padding: 1em 0; /* 20px */
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+p {
+    width: 100%;
+    margin: auto;
+    /* padding: 1em 0; */
+}
+
+#portfolio p {
+    width: 90%;
+}
+
+
+/* ------- */
+
+caption {
+    font-style: italic;
+    color: silver;
+}
+        /* Why is this not working? */
+
+div {
+    /* padding: 2em 0; */
+}
+
+strong {
+    color: #eb422a;
+}
+
+hr {
+    border: 0.5px solid silver;
+}
+
+
+/* ------- */
+
+footer {
+    /* padding-top: 25px;
+    padding-bottom: 30px; */
+    text-align: left;
+}
+
+h4 {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: left;
+    color: #eb422a;
+    margin: 0;
+}
+
+.footer-nav {
+    text-align: right;
+}
+
+
+/* ================= */
+/* Pseudo Selectors */
+/* =============== */
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color:#eb422a;
+}
+        /* Waiting to learn how to integrate a transition into #eb422a */
+
+
+
+
+
+
+
+/* -------- */
+
+
+/* 
+li {
+    display: inline-block; This is for tablet & desktop.
+}
+*/
+
+/* 
+box-sizing: border-box;
+*/

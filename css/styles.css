@@ -23,7 +23,7 @@ body {
 /* ------- */
 
 header {
-    padding: 1em 0; /* 20px */
+    padding: .8em 0; /* 16px */
 }
 
 h1 {
@@ -59,37 +59,45 @@ li {
 /* ------- */
 
 section {
-    /* padding: 1em 0; */
+    padding: 2.441em 0; /* 61.04px */
+    /* 25px */
 }
         /* What's this for again? */
 
 main {
     background-color: white;
-    /* padding: 1em; */
 }
 
 .profile-img {
     width: 70%;
-    padding: 1em 0; /* 20px */
 }
 
-img {
-    width: 100%;
-}
-
-h3 {
-    font-size: 1.5em;
-    font-weight: 300;
+.profile-img, img {
+    padding: 0 0 1em; /* 20px */
 }
 
 p {
     width: 100%;
     margin: auto;
-    /* padding: 1em 0; */
+    padding: .512em 0; 
+        /* 20px */
 }
 
-#portfolio p {
+h2, img {
+    padding: 1.25em 0; /* 61.04px */
+    margin: 0;
+    width: 100%;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1em; /* 20px */
+    font-weight: 300;
+}
+
+section p {
     width: 90%;
+    font-size: .8em;
 }
 
 
@@ -109,8 +117,8 @@ strong {
     color: #eb422a;
 }
 
-hr {
-    border: 0.5px solid silver;
+#contact, #bio {
+    border-bottom: 0.5px solid silver;
 }
 
 

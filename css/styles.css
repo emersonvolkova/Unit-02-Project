@@ -7,19 +7,59 @@
 }
 
 body {
+    width: 90%;
     background-color: #fafafa;
     font-family: 'Rubik', sans-serif;
     text-align: center;
     line-height: 1.5;
-    /*padding: 0 .8em;*/ /* 16px */
+    margin: 0 auto;
 }
-        /* I obtained the background color by using an online color picker that sampled the background color of the body in a reference image.*/
-        /* I chose Rubik as my font, as I found the sans-serif to be compatible to the mockup and versatile in weight. The rounded corners add a more complementary element to the theme, and I chose Ubuntu to add a playful contrast for the title. */
+
+header {
+    margin-bottom: 16px;
+}
+
+
+
+.nav, h2 {
+    text-transform: uppercase;
+    font-size: .875em; /* 14px */
+    letter-spacing: 2px;
+}
+
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
 
 h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.25em; /* 25px */
     width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5em; /* 24px */
+    margin: 0 0 10px;
+    padding: 20px 0;
+}
+
+h1,
+h3 {
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 1.25em; /* 20px */
+    margin: 20px 0;
+}
+
+h4 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li a {
+    display: block;
+    background-color: white;
+    margin-bottom: 5px;
+    padding: 12px 0; 
 }
 
 a {
@@ -27,51 +67,86 @@ a {
     text-decoration: none;
 }
 
-
-/* =================== */
-/* BASE LAYOUT STYLES */
-/* ================= */
-
-li {
-
-    background-color: white;
-    margin-bottom: 5px; /* Should I use relative values here? */
-    padding: .75rem 0; /* Rem unit due to compounding */
+section {
+    padding: 50px 0;
 }
-        /* Locate anchor tags in Pseudo Styles Section */
+
+main {
+    background-color: #fff;
+}
+
+p {
+    font-weight: lighter;
+    margin: 0 0 40px;
+}
 
 .profile-img {
     width: 70%;
+    margin-bottom: 25px;
 }
 
 img {
     width: 100%;
 }
 
-
-/* ------- NAVIGATION ------- */
-
-.name {
-    margin: 0;
+strong {
+    color: #eb422a;
 }
 
-/* ------- LAYOUT CONTAINERS ------- */
-
-
-.wrapper {
-    width: 90%;
-    margin: 0 auto;
-}
- 
-.main-header {
-    padding: 1em o;
+footer {
+    padding: 15px 0 20px;
+    overflow: auto;
 }
 
+/* =================== */
+/* BASE LAYOUT STYLES */
 /* ================= */
-/* Pseudo Selectors */
-/* =============== */
 
 
+#skills {
+    padding-top: 60px;
+    padding-bottom: 0;
+}
+
+.skills li {
+    width: 70%;
+    text-align: left;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 5px auto;
+    list-style-type: circle;
+}
+
+.contact-info, .skills {
+    line-height: 2;
+}
+
+#contact {
+    border-bottom: 0.5px solid silver;
+}
+
+.footer-name {
+    text-align: left;
+    font-weight: lighter;
+    float: left;
+}
+
+.basic-nav {
+    text-align: right;
+    float: right;
+}
+
+.footer-name,
+.basic-nav {
+    margin: 0;
+    width: 45%;
+}
+
+.footer-nav li {
+    display: none;
+}
+
+/* ------- Pseudo Selectors ------- */
 
 a:visited {
     color: black;
@@ -80,5 +155,192 @@ a:visited {
 a:hover {
     color:#eb422a;
 }
-        /* Waiting to learn how to integrate a transition into #eb422a */
 
+
+/* ============== */
+/* MEDIA QUERIES */
+/* ============ */
+
+@media (min-width: 768px) {
+
+    .main-header {
+        padding-top: 20px;
+    }
+
+    .name {
+        margin: 0;
+    }
+
+    .main-nav li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .main-nav a {
+        padding: 15px 25px;
+    }
+
+    .profile {
+        font-size: 1.25em;
+        text-align: left;
+    }
+
+    .profile-img {
+        float: right;
+        width: 42%;
+        margin: 0 0 0 16px;
+    }
+
+    .col-left {
+        float: left;
+        width: 49%;
+    }
+
+    .col-right {
+        float: right;
+        width: 49%;
+    }
+
+    .main-portfolio p {
+        width: 85%;
+        margin: 0 auto 40px;
+    }
+
+    #base-copy {
+        width: 60%;
+        line-height: 1.5;
+        margin: 0 auto 30px;
+    }
+
+    .skills li {
+        text-align: right;
+        list-style-type: none;
+        width: 40%;
+        margin-bottom: -10px;
+    }
+
+    #contact {
+        padding-top: 60px;
+    }
+
+    footer {
+        margin: 0 auto 40px;
+    }
+
+    .footer-name {
+        text-align: left;
+        font-weight: lighter;
+        float: left;
+        padding: 12px 0;
+    }
+    
+    .basic-nav {
+        display: none;
+    }
+
+    .footer-nav {
+        float: right;
+    }
+
+    .footer-nav li {
+        display: inline-block;
+    }
+
+    .footer-nav a {
+        font-size: .85em;
+        margin: 0 0 0 15px;
+    }
+
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1024px;    
+    }
+
+    .wrapper {
+        padding: 20px 30px 50px;
+    }
+
+    .main-header {
+        padding: 30px 0;
+    }
+
+    .name,
+    .main-nav {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .name {
+        width: 250px;
+        float: left;
+        margin-left: -4px;
+    }
+
+    .nav {
+        padding: 10px 0;
+    }
+
+    .nav a {
+        background-color: transparent;
+        margin: 0 -10px 0 25px; 
+        padding: 0;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    .profile {
+        padding: 0;
+    }
+
+    .profile-img {
+        margin: 0 0 0 60px;
+    }
+
+    .main-portfolio {
+        padding: 30px;
+    }
+
+
+    #main-h2 {
+        margin: 0;
+        padding: 20px 0 50px;
+    }
+
+    .row-1,
+    .row-2 {
+        display: inline-block;
+        float: left;
+        width: 32.5%;
+        }
+
+    .mid-col {
+        margin: 0 10px;
+    }
+
+    #section-header {
+        margin-bottom: 30px;
+    }
+
+    #base-copy {
+        width: 50%;
+        line-height: 1.5;
+        margin: 0 auto 30px;
+    }
+
+    footer {
+        padding: 10px 0;
+        margin: 0 auto;
+    }
+}
+
+
+/* ------- FLOAT CLEARFIX ------- */
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}

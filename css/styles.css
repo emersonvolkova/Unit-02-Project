@@ -156,6 +156,13 @@ a:hover {
     color:#eb422a;
 }
 
+/* ------- FLOAT CLEARFIX ------- */
+
+.clear:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* ============== */
 /* MEDIA QUERIES */
@@ -324,7 +331,7 @@ a:hover {
         margin-bottom: 30px;
     }
 
-    #base-copy {
+    .base-copy {
         width: 50%;
         line-height: 1.5;
         margin: 0 auto 30px;
@@ -334,13 +341,4 @@ a:hover {
         padding: 10px 0;
         margin: 0 auto;
     }
-}
-
-
-/* ------- FLOAT CLEARFIX ------- */
-
-.clear:after {
-    content: "";
-    display: table;
-    clear: both;
 }
